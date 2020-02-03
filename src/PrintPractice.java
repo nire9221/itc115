@@ -1,6 +1,6 @@
 
 
-public class Pracitce1_print {
+public class PrintPractice {
 	public static void main(String[] args) {
 		
 		System.out.println("Hello world");

@@ -1,5 +1,5 @@
 
-public class Practice2_FooBarBazMumble {
+public class FooBarBazMumble {
 
 	public static void main(String[] args) {
 		foo();

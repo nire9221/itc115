@@ -1,7 +1,7 @@
 
 
 
-public class Practice3_rocket {
+public class Rocket {
 
 	public static void main(String[] args) {
 		

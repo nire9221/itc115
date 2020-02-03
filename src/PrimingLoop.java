@@ -9,7 +9,6 @@ public class PrimingLoop {
 		System.out.println();
 		
 		Scanner colsole = new Scanner(System.in);
-		Random r = new Random();
 		
 		System.out.print("Pick a number between 1 and 10 -->");
 		int number = colsole.nextInt();

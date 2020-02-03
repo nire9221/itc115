@@ -1,6 +1,6 @@
 //import java.text.NumberFormat;
 
-public class Practice4_Receipt {
+public class Receipt {
 
 	
 	public static void main(String[] args) {

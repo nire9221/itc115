@@ -1,5 +1,5 @@
 
-public class Practice5_Sum {
+public class SumPractice {
 
 	public static void main(String[] args) {
 		int sum= computeSum(3,5);

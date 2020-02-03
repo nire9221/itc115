@@ -1,5 +1,5 @@
 
-public class Practice6_BMICalculator {
+public class BMICalculator {
 
 	public static void main(String[] args) {
 //		double weight; 
