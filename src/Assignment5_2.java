@@ -1,6 +1,6 @@
 //*******************************************************************
 // 1) get input (name(string), score(int))
-// 2) get summary (count # of score input, sum score)
+// 2) get summary (number of score input, sum score)
 // 3) get avg (sum/#of count)
 //By: Jinyoung Kang
 //Date: 2/4/2019, 2/6/2019 
@@ -22,20 +22,15 @@ public class Assignment5_2 {
         System.out.print("Enter a student record? ");
 
         String name = console.next();
-        System.out.println(name);
+       // System.out.println(name);
         int num = console.nextInt();
-        System.out.println(num);
         double sum = 0;
-        // int count = 0;
 
         for (int i = 0; i < num; i++) {
 
             sum += console.nextInt();
-            System.out.println(sum);
-            // count++;
         }
         double gpa = sum / num;
-        System.out.println(gpa);
         System.out.println(name + "'s grade is " + gpa);
     }
 }
