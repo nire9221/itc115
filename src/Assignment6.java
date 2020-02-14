@@ -1,7 +1,7 @@
 //*******************************************************************
-//  The class or method name
-//
-// Description of the class or method purpose
+// get number of boys' num and girls' num (btotal/gtotal) 
+// get sum each number  (boysum/girlsum)
+// find the number in while loop and added up 
 //By: Jinyoung Kang
 //Date: 
 //*******************************************************************
@@ -12,26 +12,40 @@ import java.util.*;   // for Scanner
 public class Assignment6 {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		 Scanner input = new Scanner(new File("boysgirls.txt"));
-		 while (input.hasNextLine()) {
-			 String text = input.nextLine();
-			 processLine(text);
-		 }
-	}
-	public static void processLine (String text) {
-		Scanner data = new Scanner (text);
-		int id = data.nextInt();
-		String name = data.next();
-		double sum = 0.0;
-		while (data.hasNextDouble()) {
-			sum += data.nextDouble();
-		}
-		System.out.println("Total hours worked by " + name + "(id#" + id + ") = " + sum);
+		
+		Scanner input = new Scanner(new File("sample/boysgirls.txt"));
+		textfile(input);
+		
 	}
 	
-	
-	
-
+	public static void textfile (Scanner input) {	     
+		int boysum = 0;
+		int girlsum = 0;
+	    int btotal = 0;
+	    int gtotal = 0;
+	    int count = 0; 
+		
+		while (input.hasNext()) {
+	    	 String name = input.next();
+	    	 int num = input.nextInt(); 
+		     
+			     
+			 if(count % 2 == 0) {	 
+				 btotal++;
+				 boysum += num;
+			       
+			 }
+			        
+			 else if (count % 2 != 0) {
+				 gtotal++;
+				 girlsum += num;
+			       
+		     }
+			 count++;
+			 
+		     }
+		System.out.println("Difference between boys' and girls' sums : " + Math.abs((boysum - girlsum)));
+	}
 }
 
 
@@ -45,7 +59,3 @@ public class Assignment6 {
 //4 boys, 3 girls 
 //Difference betwwen boys' and girls' sums : 5 
 
-
-//
-//You can find the path to your project by clicking on your project folder in Eclipse, then => File => Properties. 
-//Copy the file in this location (but not inside not inside src or class folders.)
