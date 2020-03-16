@@ -1,13 +1,13 @@
 import java.text.NumberFormat;
 
-public class Product {
+public class Assignment9_product {
 
 	int pCode;
 	String description;
 	double price;
 	int qty;	
 	
-	Product(int c, String d, double p, int q){
+	Assignment9_product(int c, String d, double p, int q){
 		this.pCode = c;
 		this.description = d;
 		this.price = p;

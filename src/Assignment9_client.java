@@ -16,16 +16,16 @@
 
 
 
-public class Client {
+public class Assignment9_client {
 
 	public static void main(String[] args) {
 		
-		Product [] p = new Product[7];
+		Assignment9_product [] p = new Assignment9_product[7];
 		
 		//int c, String d, double p, int q
-		p[0] = new Product(1, "banana" ,1.2 ,20);
-		p[1] = new Product(2, "apple" ,0.5 ,10);
-		p[2] = new Product(3, "mango" ,3 ,15);
+		p[0] = new Assignment9_product(1, "banana" ,1.2 ,20);
+		p[1] = new Assignment9_product(2, "apple" ,0.5 ,10);
+		p[2] = new Assignment9_product(3, "mango" ,3 ,15);
 				
 		System.out.println("item "+p[0].getpCode() +" " + p[0].toString());
 		System.out.println("current Qty: " + p[0].getQty());
