@@ -2,7 +2,6 @@ import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-
 // impelemnt a class called WalkupTicket to represent a walk-up event ticket. Walk-up tickets are also constructed by number
 //, and they have a price of $50
  
